@@ -23,6 +23,7 @@ MEDIA QUERY MANAGER
 1800px + :          Big Desktop
 
 $breakpoint argument choices:
+
 - phone
 - tab-port
 - tab-land
@@ -37,7 +38,7 @@ $breakpoint argument choices:
   }  
 
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25‬em) { @content };     //900px
+    @media (max-width: 56.25em) { @content };     //900px
   }
 
   @if $breakpoint == tab-land {
@@ -45,6 +46,6 @@ $breakpoint argument choices:
   }
 
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5‬em) { @content };     //1800px
+    @media (min-width: 112.5em) { @content };     //1800px
   }
 }
